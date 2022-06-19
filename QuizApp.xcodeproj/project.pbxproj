@@ -9,14 +9,9 @@
 /* Begin PBXBuildFile section */
 		0E34338727D1E74400CE62B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34338627D1E74400CE62B5 /* AppDelegate.swift */; };
 		0E34338927D1E74400CE62B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34338827D1E74400CE62B5 /* SceneDelegate.swift */; };
-		0E34338B27D1E74400CE62B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34338A27D1E74400CE62B5 /* ViewController.swift */; };
 		0E34338E27D1E74400CE62B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E34338C27D1E74400CE62B5 /* Main.storyboard */; };
 		0E34339027D1E74700CE62B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E34338F27D1E74700CE62B5 /* Assets.xcassets */; };
 		0E34339327D1E74700CE62B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E34339127D1E74700CE62B5 /* LaunchScreen.storyboard */; };
-		0E34339E27D1E7A100CE62B5 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E34339D27D1E7A100CE62B5 /* QuestionViewModel.swift */; };
-		0E3433A227D490C700CE62B5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3433A127D490C700CE62B5 /* QuizViewController.swift */; };
-		0E3433A427D490D700CE62B5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3433A327D490D700CE62B5 /* ResultViewController.swift */; };
-		0E3433A627D490EF00CE62B5 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3433A527D490EF00CE62B5 /* QuizCollectionViewCell.swift */; };
 		D55D892A285E697B00E50BA4 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D8929285E697B00E50BA4 /* AppExtensions.swift */; };
 		D55D892C285E6FCE00E50BA4 /* QuizAppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D892B285E6FCE00E50BA4 /* QuizAppEntity.swift */; };
 		D55D892E285E729600E50BA4 /* QuizAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D892D285E729600E50BA4 /* QuizAppCollectionViewCell.swift */; };
@@ -43,15 +38,10 @@
 		0E34338327D1E74400CE62B5 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E34338627D1E74400CE62B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E34338827D1E74400CE62B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E34338A27D1E74400CE62B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E34338D27D1E74400CE62B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E34338F27D1E74700CE62B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E34339227D1E74700CE62B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E34339427D1E74700CE62B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E34339D27D1E7A100CE62B5 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
-		0E3433A127D490C700CE62B5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		0E3433A327D490D700CE62B5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		0E3433A527D490EF00CE62B5 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		D55D8929285E697B00E50BA4 /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 		D55D892B285E6FCE00E50BA4 /* QuizAppEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppEntity.swift; sourceTree = "<group>"; };
 		D55D892D285E729600E50BA4 /* QuizAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,8 +96,6 @@
 		0E34338527D1E74400CE62B5 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				0E34339C27D1E77700CE62B5 /* ViewModel */,
-				0E34339B27D1E77100CE62B5 /* Controller */,
 				0E34338627D1E74400CE62B5 /* AppDelegate.swift */,
 				0E34338827D1E74400CE62B5 /* SceneDelegate.swift */,
 				0E34338C27D1E74400CE62B5 /* Main.storyboard */,
@@ -116,25 +104,6 @@
 				0E34339427D1E74700CE62B5 /* Info.plist */,
 			);
 			path = QuizApp;
-			sourceTree = "<group>";
-		};
-		0E34339B27D1E77100CE62B5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				0E34338A27D1E74400CE62B5 /* ViewController.swift */,
-				0E3433A127D490C700CE62B5 /* QuizViewController.swift */,
-				0E3433A327D490D700CE62B5 /* ResultViewController.swift */,
-				0E3433A527D490EF00CE62B5 /* QuizCollectionViewCell.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		0E34339C27D1E77700CE62B5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				0E34339D27D1E7A100CE62B5 /* QuestionViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D5B16061285E403900166680 /* App */ = {
@@ -260,22 +229,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B16070285E428D00166680 /* ResultsRouter.swift in Sources */,
-				0E34338B27D1E74400CE62B5 /* ViewController.swift in Sources */,
 				D5B16056285E3DCD00166680 /* QuizAppPresenter.swift in Sources */,
 				D5B16058285E3DE500166680 /* QuizAppInteractor.swift in Sources */,
 				D5B1606E285E424F00166680 /* ResultsPresenter.swift in Sources */,
 				D5F3BB4C285EFC780045401F /* AppPresenter.swift in Sources */,
 				D5B16076285E5AEA00166680 /* AppProtocols.swift in Sources */,
 				0E34338727D1E74400CE62B5 /* AppDelegate.swift in Sources */,
-				0E3433A427D490D700CE62B5 /* ResultViewController.swift in Sources */,
 				D5B1607D285E624500166680 /* ResultsProtocol.swift in Sources */,
 				D5B16078285E5BC200166680 /* AppRouter.swift in Sources */,
 				D5B1607A285E5BE000166680 /* AppInteractor.swift in Sources */,
 				D5B16054285E3BE500166680 /* QuizAppProtocols.swift in Sources */,
 				D55D892E285E729600E50BA4 /* QuizAppCollectionViewCell.swift in Sources */,
 				D5B1606A285E41FA00166680 /* ResultsViewController.swift in Sources */,
-				0E34339E27D1E7A100CE62B5 /* QuestionViewModel.swift in Sources */,
-				0E3433A227D490C700CE62B5 /* QuizViewController.swift in Sources */,
 				D5B16060285E3F4A00166680 /* QuizAppResponseModel.swift in Sources */,
 				D5B1606C285E421300166680 /* ResultsInteractor.swift in Sources */,
 				0E34338927D1E74400CE62B5 /* SceneDelegate.swift in Sources */,
@@ -283,7 +248,6 @@
 				D5B1605E285E3F3300166680 /* QuizAppViewController.swift in Sources */,
 				D5B16074285E5AB300166680 /* AppViewController.swift in Sources */,
 				D55D892A285E697B00E50BA4 /* AppExtensions.swift in Sources */,
-				0E3433A627D490EF00CE62B5 /* QuizCollectionViewCell.swift in Sources */,
 				D5B1605C285E3F0B00166680 /* QuizAppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

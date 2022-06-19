@@ -13,22 +13,10 @@ import Foundation
 
 class QuizAppPresenter: QuizAppPresenterProtocol {
     var view: QuizAppViewProtocol?
-    
     var router: QuizAppRouterProtocol?
-    
     var interactor: QuizAppInteractorProtocol?
-    
-    func viewDidLoad() {
+  
+    func navigateToResultsScreen() {
         
     }
-    
-    func signInButtonPressed(userName: String?, approvalValue: String?) {
-        
-    }
-    
-    func navigateToSomeScreen() {
-    
-    }
-    
-    
 }

@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+typealias ResultsEntryPoint = ResultsViewProtocol & UIViewController
 
 protocol ResultsViewProtocol: AnyObject {
     var presenter: ResultsPresenterProtocol? { get set }
@@ -15,22 +18,20 @@ protocol ResultsViewProtocol: AnyObject {
     func updateResultLabelText(_ resultValue: Int)
 }
 
+protocol ResultsInteractorProtocol {
+    var presenter: ResultsPresenterProtocol? { get set }
+}
+
 protocol ResultsPresenterProtocol: AnyObject {
     var view: ResultsViewProtocol? { get set }
     var router: ResultsRouterProtocol? { get set }
-    var interactor: ResultsInteractorInputProtocol? { get set }
+    var interactor: ResultsInteractorProtocol? { get set }
 
     func navigateToHomeScreen()
 }
 
 protocol ResultsRouterProtocol: AnyObject {
+    var entry: ResultsEntryPoint? { get }
+    static func start() -> ResultsRouterProtocol
     func navigateToHomeScreen(view: ResultsViewProtocol?)
-}
-
-protocol ResultsInteractorInputProtocol: AnyObject {
-
-}
-
-protocol ResultsInteractorOutputProtocol: AnyObject {
-
 }

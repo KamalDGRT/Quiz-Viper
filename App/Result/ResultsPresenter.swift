@@ -15,9 +15,9 @@ import Foundation
 class ResultsPresenter: ResultsPresenterProtocol {
     var view: ResultsViewProtocol?
     var router: ResultsRouterProtocol?
-    var interactor: ResultsInteractorInputProtocol?
+    var interactor: ResultsInteractorProtocol?
 
     func navigateToHomeScreen() {
-        
+        router?.navigateToHomeScreen(view: view)
     }
 }

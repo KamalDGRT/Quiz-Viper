@@ -85,6 +85,7 @@ class QuizAppViewController: UIViewController, QuizAppViewProtocol {
 
         } else {
             // Move the user on the result controller
+            
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as? ResultsViewController else {return}
             vc.result = points
             self.navigationController?.pushViewController(vc, animated: true)

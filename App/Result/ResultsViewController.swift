@@ -37,5 +37,6 @@ class ResultsViewController: UIViewController, ResultsViewProtocol {
 
     @IBAction func didTapBackToHomeButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
+//        presenter?.navigateToHomeScreen()
     }
 }

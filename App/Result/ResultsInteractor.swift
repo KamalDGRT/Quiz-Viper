@@ -10,3 +10,8 @@
 // can also make API calls
 
 import Foundation
+
+class ResultsInteractor: ResultsInteractorProtocol {
+    var presenter: ResultsPresenterProtocol?
+
+}
