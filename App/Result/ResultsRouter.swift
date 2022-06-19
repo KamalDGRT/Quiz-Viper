@@ -12,21 +12,22 @@ import Foundation
 import UIKit
 
 class ResultsRouter: ResultsRouterProtocol {
-    var entry: ResultsEntryPoint?
 
-    static func start() -> ResultsRouterProtocol {
+    static func createResultsView() -> UINavigationController {
         let router = ResultsRouter();
-        let view: ResultsViewProtocol = ResultsViewController()
-        let presenter: ResultsPresenterProtocol = ResultsPresenter()
-        var interactor: ResultsInteractorProtocol = ResultsInteractor()
+        let view = ResultsViewController()
+        let presenter = ResultsPresenter()
+        let interactor = ResultsInteractor()
 //
         view.presenter = presenter
         interactor.presenter = presenter
         presenter.router = router
         presenter.view = view
         presenter.interactor = interactor
-        router.entry = view as? ResultsEntryPoint
-        return router
+        
+        let navigationController = UINavigationController(rootViewController: view)
+        return navigationController
+      
     }
 
     func navigateToHomeScreen(view: ResultsViewProtocol?) {

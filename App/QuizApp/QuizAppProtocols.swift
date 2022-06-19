@@ -24,11 +24,7 @@ protocol QuizAppPresenterProtocol: AnyObject {
 }
 
 protocol QuizAppRouterProtocol: AnyObject {
-    var entry: QuizAppEntryPoint? { get }
-    static func start() -> QuizAppRouterProtocol
-
     func navigateToResultsScreen(view: QuizAppViewProtocol?)
-    func createQuizAppView() -> UINavigationController
 }
 
 protocol QuizAppInteractorProtocol: AnyObject{

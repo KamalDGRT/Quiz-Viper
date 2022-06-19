@@ -21,7 +21,7 @@ class QuizAppViewController: UIViewController, QuizAppViewProtocol {
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
 
-    var viewModel = QuizAppResponseModel()
+    var quizAppModel = QuizAppResponseModel()
     var questions:[Questions]?
     
     var answerSelected = false
@@ -39,8 +39,8 @@ class QuizAppViewController: UIViewController, QuizAppViewProtocol {
         super.viewDidLoad()
         designNavButtons()
         
-        viewModel.apiToGetQuestionData { [weak self] in
-            self?.questions = self?.viewModel.questionData?.data?.questions
+        quizAppModel.apiToGetQuestionData { [weak self] in
+            self?.questions = self?.quizAppModel.questionData?.data?.questions
             DispatchQueue.main.async {
                 self?.collectionView.delegate = self
                 self?.collectionView.dataSource = self
@@ -64,7 +64,7 @@ class QuizAppViewController: UIViewController, QuizAppViewProtocol {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    
+
     @IBAction func onClickNext(_ sender: Any) {
         if !answerSelected {
             showAlertPopup()

@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-typealias ResultsEntryPoint = ResultsViewProtocol & UIViewController
 
 protocol ResultsViewProtocol: AnyObject {
     var presenter: ResultsPresenterProtocol? { get set }
@@ -31,7 +30,5 @@ protocol ResultsPresenterProtocol: AnyObject {
 }
 
 protocol ResultsRouterProtocol: AnyObject {
-    var entry: ResultsEntryPoint? { get }
-    static func start() -> ResultsRouterProtocol
     func navigateToHomeScreen(view: ResultsViewProtocol?)
 }

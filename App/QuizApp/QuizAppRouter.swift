@@ -13,25 +13,24 @@ import UIKit
 
 class QuizAppRouter: QuizAppRouterProtocol {
     
-    var entry: QuizAppEntryPoint?
-
-    static func start() -> QuizAppRouterProtocol {
+    class func createQuizAppView() -> UINavigationController {
         let router = QuizAppRouter();
-        let view: QuizAppViewProtocol = QuizAppViewController()
-        let presenter: QuizAppPresenterProtocol = QuizAppPresenter()
-        let interactor: QuizAppInteractorProtocol = QuizAppInteractor()
-//
+        let view = QuizAppViewController()
+        let presenter = QuizAppPresenter()
+        let interactor = QuizAppInteractor()
+
         view.presenter = presenter
         interactor.presenter = presenter
         presenter.router = router
         presenter.view = view
         presenter.interactor = interactor
-        router.entry = view as? QuizAppEntryPoint
-        return router
+
+        let navigationController = UINavigationController(rootViewController: view)
+        return navigationController
     }
 
     func navigateToResultsScreen(view: QuizAppViewProtocol?) {
-     
+        
     }
 
     func createQuizAppView() -> UINavigationController {
