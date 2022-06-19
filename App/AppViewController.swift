@@ -31,6 +31,7 @@ class AppViewController: UIViewController, AppViewProtocol {
     
     @IBAction func didTapPlayButton(_ sender: Any) {
         print("Play Button Tapped")
-        presenter?.navigateToQuizApp()
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "QuizAppViewController") as? QuizAppViewController else {return}
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

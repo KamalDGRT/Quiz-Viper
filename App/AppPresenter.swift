@@ -19,6 +19,6 @@ class AppPresenter: AppPresenterProtocol{
     var interactor: AppInteractorProtocol?
     
     func navigateToQuizApp() {
-        router?.navigateToQuizApp()
+        router?.navigateToQuizApp(view: view)
     }
 }

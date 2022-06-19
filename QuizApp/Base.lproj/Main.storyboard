@@ -93,7 +93,7 @@
         <!--Quiz App View Controller-->
         <scene sceneID="0PL-sX-eGK">
             <objects>
-                <viewController storyboardIdentifier="QuizAppViewController" id="kVn-0X-iCc" customClass="QuizAppViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizAppViewController" id="kVn-0X-iCc" customClass="QuizAppViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2b-Tw-eKP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickNext:" destination="kVn-0X-iCc" eventType="touchUpInside" id="ZH2-Kw-XVl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzE-nx-ZHr">
                                 <rect key="frame" x="20" y="64" width="100" height="40"/>
@@ -126,6 +129,9 @@
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickExit:" destination="kVn-0X-iCc" eventType="touchUpInside" id="BiO-aZ-uKr"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oE1-Lx-HRh">
                                 <rect key="frame" x="0.0" y="114" width="414" height="748"/>
@@ -175,7 +181,7 @@
                                                                         <constraint firstAttribute="trailing" secondItem="YJo-or-8BV" secondAttribute="trailing" constant="20" id="s7i-P7-7Da"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionA:" destination="69F-qE-ROx" eventType="valueChanged" id="TTc-lu-eFF"/>
+                                                                        <action selector="onClickOptionA:" destination="69F-qE-ROx" eventType="touchUpInside" id="ed4-th-Lnw"/>
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2u-Wb-EcQ" customClass="UIControl">
@@ -196,7 +202,7 @@
                                                                         <constraint firstItem="Cik-gh-Dpf" firstAttribute="leading" secondItem="f2u-Wb-EcQ" secondAttribute="leading" constant="20" id="uAb-rj-q4B"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionB:" destination="69F-qE-ROx" eventType="valueChanged" id="022-V4-N9c"/>
+                                                                        <action selector="onClickOptionB:" destination="69F-qE-ROx" eventType="touchUpInside" id="06z-I0-26b"/>
                                                                     </connections>
                                                                 </view>
                                                             </subviews>
@@ -223,7 +229,7 @@
                                                                         <constraint firstItem="VqL-OG-b7N" firstAttribute="leading" secondItem="P7l-4g-Mgh" secondAttribute="leading" constant="20" id="epZ-Zd-tRk"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionC:" destination="69F-qE-ROx" eventType="valueChanged" id="WDe-89-lQl"/>
+                                                                        <action selector="onClickOptionC:" destination="69F-qE-ROx" eventType="touchUpInside" id="cEg-uv-fvp"/>
                                                                     </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-Yp-8uj" customClass="UIControl">
@@ -244,7 +250,7 @@
                                                                         <constraint firstAttribute="bottom" secondItem="fi4-Ei-dts" secondAttribute="bottom" constant="20" id="qky-4g-Pp3"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionD:" destination="69F-qE-ROx" eventType="valueChanged" id="rZF-FT-TG9"/>
+                                                                        <action selector="onClickOptionD:" destination="69F-qE-ROx" eventType="touchUpInside" id="ErD-r6-7XW"/>
                                                                     </connections>
                                                                 </view>
                                                             </subviews>
@@ -297,6 +303,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="oE1-Lx-HRh" id="gKx-7L-nGU"/>
                         <outlet property="exitButton" destination="EzE-nx-ZHr" id="qsE-IT-x4P"/>
                         <outlet property="nextButton" destination="BRX-vb-9il" id="xke-jC-ewq"/>
                     </connections>

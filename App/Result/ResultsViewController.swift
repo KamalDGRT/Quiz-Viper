@@ -35,6 +35,6 @@ class ResultsViewController: UIViewController, ResultsViewProtocol {
     }
 
     @IBAction func didTapBackToHomeButton(_ sender: Any) {
-    
+        
     }
 }
