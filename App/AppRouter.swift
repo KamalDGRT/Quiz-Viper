@@ -30,4 +30,16 @@ class AppRouter: AppRouterProtocol {
 
         return router
     }
+    
+    func navigateToQuizApp(view: AppViewProtocol?) {
+        let quizAppViewNavigationController = QuizAppRouter().createQuizAppView()
+        
+        if (view as? AppViewController) != nil {
+            guard let quizAppController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "QuizAppViewController") as? QuizAppViewController else { return }
+            
+            quizAppViewNavigationController.pushViewController(quizAppController, animated: true)
+
+        }
+
+    }
 }

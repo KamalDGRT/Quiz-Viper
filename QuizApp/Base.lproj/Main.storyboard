@@ -174,6 +174,9 @@
                                                                         <constraint firstItem="YJo-or-8BV" firstAttribute="leading" secondItem="u2q-Oe-s25" secondAttribute="leading" constant="20" id="pge-99-e6R"/>
                                                                         <constraint firstAttribute="trailing" secondItem="YJo-or-8BV" secondAttribute="trailing" constant="20" id="s7i-P7-7Da"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="onClickOptionA:" destination="69F-qE-ROx" eventType="valueChanged" id="TTc-lu-eFF"/>
+                                                                    </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2u-Wb-EcQ" customClass="UIControl">
                                                                     <rect key="frame" x="184" y="0.0" width="169" height="169"/>
@@ -193,7 +196,7 @@
                                                                         <constraint firstItem="Cik-gh-Dpf" firstAttribute="leading" secondItem="f2u-Wb-EcQ" secondAttribute="leading" constant="20" id="uAb-rj-q4B"/>
                                                                     </constraints>
                                                                     <connections>
-                                                                        <action selector="onClickOptionb:" destination="69F-qE-ROx" eventType="touchUpInside" id="AbX-gb-NIp"/>
+                                                                        <action selector="onClickOptionB:" destination="69F-qE-ROx" eventType="valueChanged" id="022-V4-N9c"/>
                                                                     </connections>
                                                                 </view>
                                                             </subviews>
@@ -219,11 +222,14 @@
                                                                         <constraint firstItem="VqL-OG-b7N" firstAttribute="top" secondItem="P7l-4g-Mgh" secondAttribute="top" constant="20" id="anX-9B-nM9"/>
                                                                         <constraint firstItem="VqL-OG-b7N" firstAttribute="leading" secondItem="P7l-4g-Mgh" secondAttribute="leading" constant="20" id="epZ-Zd-tRk"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="onClickOptionC:" destination="69F-qE-ROx" eventType="valueChanged" id="WDe-89-lQl"/>
+                                                                    </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-Yp-8uj" customClass="UIControl">
                                                                     <rect key="frame" x="184" y="0.0" width="169" height="169"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi4-Ei-dts">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fi4-Ei-dts">
                                                                             <rect key="frame" x="20" y="20" width="129" height="129"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,6 +243,9 @@
                                                                         <constraint firstAttribute="trailing" secondItem="fi4-Ei-dts" secondAttribute="trailing" constant="20" id="Tue-ar-To1"/>
                                                                         <constraint firstAttribute="bottom" secondItem="fi4-Ei-dts" secondAttribute="bottom" constant="20" id="qky-4g-Pp3"/>
                                                                     </constraints>
+                                                                    <connections>
+                                                                        <action selector="onClickOptionD:" destination="69F-qE-ROx" eventType="valueChanged" id="rZF-FT-TG9"/>
+                                                                    </connections>
                                                                 </view>
                                                             </subviews>
                                                         </stackView>
@@ -255,7 +264,15 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="731"/>
                                         <connections>
-                                            <outlet property="optionB" destination="f2u-Wb-EcQ" id="GSs-yz-fvj"/>
+                                            <outlet property="option1" destination="YJo-or-8BV" id="aOf-fQ-qsP"/>
+                                            <outlet property="option2" destination="Cik-gh-Dpf" id="I54-mP-lEH"/>
+                                            <outlet property="option3" destination="VqL-OG-b7N" id="GIE-k8-a55"/>
+                                            <outlet property="option4" destination="fi4-Ei-dts" id="XqL-qR-4QC"/>
+                                            <outlet property="optionA" destination="u2q-Oe-s25" id="bxg-hu-APi"/>
+                                            <outlet property="optionB" destination="f2u-Wb-EcQ" id="0lM-M7-UeF"/>
+                                            <outlet property="optionC" destination="P7l-4g-Mgh" id="Dem-QP-Xgx"/>
+                                            <outlet property="optionD" destination="DgF-Yp-8uj" id="3EY-jC-aGR"/>
+                                            <outlet property="questionLabel" destination="KgL-R1-i9U" id="Kkr-UN-d57"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

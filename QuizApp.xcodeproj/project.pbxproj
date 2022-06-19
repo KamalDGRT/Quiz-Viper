@@ -23,7 +23,6 @@
 		D5B16054285E3BE500166680 /* QuizAppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B16053285E3BE500166680 /* QuizAppProtocols.swift */; };
 		D5B16056285E3DCD00166680 /* QuizAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B16055285E3DCD00166680 /* QuizAppPresenter.swift */; };
 		D5B16058285E3DE500166680 /* QuizAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B16057285E3DE500166680 /* QuizAppInteractor.swift */; };
-		D5B1605A285E3E2F00166680 /* QuizAppRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B16059285E3E2F00166680 /* QuizAppRemoteDataManager.swift */; };
 		D5B1605C285E3F0B00166680 /* QuizAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1605B285E3F0B00166680 /* QuizAppRouter.swift */; };
 		D5B1605E285E3F3300166680 /* QuizAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1605D285E3F3300166680 /* QuizAppViewController.swift */; };
 		D5B16060285E3F4A00166680 /* QuizAppResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1605F285E3F4A00166680 /* QuizAppResponseModel.swift */; };
@@ -59,7 +58,6 @@
 		D5B16053285E3BE500166680 /* QuizAppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppProtocols.swift; sourceTree = "<group>"; };
 		D5B16055285E3DCD00166680 /* QuizAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppPresenter.swift; sourceTree = "<group>"; };
 		D5B16057285E3DE500166680 /* QuizAppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppInteractor.swift; sourceTree = "<group>"; };
-		D5B16059285E3E2F00166680 /* QuizAppRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppRemoteDataManager.swift; sourceTree = "<group>"; };
 		D5B1605B285E3F0B00166680 /* QuizAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppRouter.swift; sourceTree = "<group>"; };
 		D5B1605D285E3F3300166680 /* QuizAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppViewController.swift; sourceTree = "<group>"; };
 		D5B1605F285E3F4A00166680 /* QuizAppResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppResponseModel.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				D5B16053285E3BE500166680 /* QuizAppProtocols.swift */,
 				D5B16055285E3DCD00166680 /* QuizAppPresenter.swift */,
 				D5B16057285E3DE500166680 /* QuizAppInteractor.swift */,
-				D5B16059285E3E2F00166680 /* QuizAppRemoteDataManager.swift */,
 				D5B1605D285E3F3300166680 /* QuizAppViewController.swift */,
 				D55D892B285E6FCE00E50BA4 /* QuizAppEntity.swift */,
 				D5B1605F285E3F4A00166680 /* QuizAppResponseModel.swift */,
@@ -270,7 +267,6 @@
 				D5F3BB4C285EFC780045401F /* AppPresenter.swift in Sources */,
 				D5B16076285E5AEA00166680 /* AppProtocols.swift in Sources */,
 				0E34338727D1E74400CE62B5 /* AppDelegate.swift in Sources */,
-				D5B1605A285E3E2F00166680 /* QuizAppRemoteDataManager.swift in Sources */,
 				0E3433A427D490D700CE62B5 /* ResultViewController.swift in Sources */,
 				D5B1607D285E624500166680 /* ResultsProtocol.swift in Sources */,
 				D5B16078285E5BC200166680 /* AppRouter.swift in Sources */,

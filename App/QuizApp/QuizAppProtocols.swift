@@ -6,15 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
 protocol QuizAppViewProtocol: AnyObject {
     var presenter: QuizAppPresenterProtocol? { get set }
+    func designNavButtons()
 }
 
 protocol QuizAppPresenterProtocol: AnyObject {
     var view: QuizAppViewProtocol? { get set }
     var router: QuizAppRouterProtocol? { get set }
-    var interactor: QuizAppInteractorInputProtocol? { get set }
+    var interactor: QuizAppInteractorProtocol? { get set }
     
     func viewDidLoad()
     func signInButtonPressed(userName: String?, approvalValue: String?)
@@ -22,23 +24,10 @@ protocol QuizAppPresenterProtocol: AnyObject {
 }
 
 protocol QuizAppRouterProtocol: AnyObject {
-    func createQuizAppView()
     func navigateToSomeScreen(view: QuizAppViewProtocol?)
+    func createQuizAppView() -> UINavigationController
 }
 
-protocol QuizAppInteractorInputProtocol: AnyObject{
-    var presenter: QuizAppInteractorOutputProtocol? { get set }
- 
-}
-
-protocol QuizAppRemoteDataManagerInputProtocol: AnyObject {
-    var remoteRequestHandler: QuizAppRemoteDataManagerOutputProtocol? { get set }
-}
-
-protocol QuizAppRemoteDataManagerOutputProtocol: AnyObject {
-
-}
-
-protocol QuizAppInteractorOutputProtocol: AnyObject{
-    func onSuccessReceived(response: Any)
+protocol QuizAppInteractorProtocol: AnyObject{
+    var presenter: QuizAppPresenterProtocol? { get set }
 }

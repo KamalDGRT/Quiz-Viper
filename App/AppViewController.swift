@@ -30,6 +30,7 @@ class AppViewController: UIViewController, AppViewProtocol {
     
     
     @IBAction func didTapPlayButton(_ sender: Any) {
-        
+        print("Play Button Tapped")
+        presenter?.navigateToQuizApp()
     }
 }

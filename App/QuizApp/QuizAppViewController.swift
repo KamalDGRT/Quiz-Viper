@@ -20,12 +20,12 @@ class QuizAppViewController: UIViewController, QuizAppViewProtocol {
     
     @IBOutlet weak var exitButton: UIButton!
     
-    func designPlayButton() {
+    func designNavButtons() {
 
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        designNavButtons()
     }
 }

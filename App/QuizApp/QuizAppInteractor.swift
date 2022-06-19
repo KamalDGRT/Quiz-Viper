@@ -10,3 +10,9 @@
 // can also make API calls
 
 import Foundation
+
+class QuizAppInteractor: QuizAppInteractorProtocol {
+    var presenter: QuizAppPresenterProtocol?
+    
+    
+}

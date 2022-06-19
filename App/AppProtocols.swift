@@ -26,9 +26,13 @@ protocol AppPresenterProtocol: AnyObject {
     var view: AppViewProtocol? { get set }
     var router: AppRouterProtocol? { get set }
     var interactor: AppInteractorProtocol? { get set }
+    
+    func navigateToQuizApp()
 }
 
 protocol AppRouterProtocol {
     var entry: EntryPoint? { get }
     static func start() -> AppRouterProtocol
+    
+    func navigateToQuizApp(view: AppViewProtocol?)
 }
