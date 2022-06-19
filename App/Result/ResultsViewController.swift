@@ -22,7 +22,7 @@ class ResultsViewController: UIViewController, ResultsViewProtocol {
     @IBOutlet weak var backToHomeButton: UIButton!
 
     func designBackToHomeButton() {
-        backToHomeButton.halfCircleRoundCorner()
+        backToHomeButton?.halfCircleRoundCorner()
     }
 
     func updateResultLabelText(_ resultValue: Int) {
@@ -31,10 +31,11 @@ class ResultsViewController: UIViewController, ResultsViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        designBackToHomeButton()
         updateResultLabelText(result)
     }
 
     @IBAction func didTapBackToHomeButton(_ sender: Any) {
-        
+        navigationController?.popToRootViewController(animated: true)
     }
 }
